@@ -1,0 +1,129 @@
+body {
+	margin: 0 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.banner {
+	background-color: #EFEFF2;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	position: fixed;
+}
+
+.crown {
+	display: flex;
+	align-items: center;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+.banner-center {
+	background-color: #EFEFF2;
+	width: 100%;
+	height: 40px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+	height: 25px;
+	font-size: 14px;
+	color: #d7d7d9;
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+.email2 {
+	height: 25px;
+	font-size: 15px;
+	color: #d7d7d9;
+	width: 97%;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.register {
+	background-color: #E26751;
+	height: 30px;
+	font-size: 13px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.tips {
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+	padding-top: 11px;
+	padding-bottom: 7px;
+	width: 270px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    margin-left: 130px;
+}
+
+.random-text {
+	padding-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 100px;
+}
+
+.read-more {
+	background-color: #0000;
+	font-size: 13px;
+	font-weight: 500;
+	height: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 3px;
+	margin-top: 50px;
+}
+
+.hijabers {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.slider {
+	background-color: #F0EFF1;
+	z-index: 100;
+	position: fixed;
+	width: 30%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.register2 {
+	margin-top: 20px;
+	background-color: #0F51BC;
+	color: white;
+	font-size: 16px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.close {
+	padding-top: 10px;
+}
