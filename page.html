@@ -3,7 +3,7 @@
 <head>
 	<title>Software Engineering Test | Front End</title>
 	<link rel="stylesheet" href="page.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 <body id="scroller" onscroll="getScrollPercentage()">
 	<div class="banner">
@@ -12,7 +12,7 @@
 		</div>
 		<div class="banner-center">
 			<span align="center">Mau voucher diskon belanja up to 70%?</span>
-			<input class="email" type="text" value="Masukkan email kamu">
+			<input class="email" type="email" placeholder="Masukkan email kamu disini" value="">
 			<button class="register">DAFTAR</button>
 		</div>
 	</div>
@@ -97,8 +97,8 @@
 	<div class="slider" id="slider">
 		<img class="close" src="close.png" height="20" align="right" onClick="closeSlider()">
 		<p style="font-size: 30px;">Belanja Gak Pake Pusing!</p>
-		<p style="font-size: 17px; margin-top: -10px;">Yuk daftarin emailmu untuk melihat pilihan barang - barang fashion MURAH dan TERKINI dari ribuan toko online terpercaya langsung ke email kamu</p>
-		<input class="email2" type="text" value="Masukkan email kamu disini">
+		<p style="font-size: 17px; margin-top: -15px;">Yuk daftarin emailmu untuk melihat pilihan barang - barang fashion MURAH dan TERKINI dari ribuan toko online terpercaya langsung ke email kamu</p>
+		<input class="email2" type="email" placeholder="Masukkan email kamu disini" value="">
 		<button class="register2">DAFTARKAN SEKARANG</button>
 		<p>Powered by SumoMe</p>
 	</div>
@@ -112,7 +112,7 @@
 			count += 1;
 			if (count == 1) {
 				/* set interval to 10 minutes = 600000 ms */
-				time = setInterval(showSlider, 1000);
+				time = setInterval(showSlider, 600000);
 			} else {
 				clearInterval(time);
 			}
@@ -120,6 +120,8 @@
 
 		function showSlider() {
 			document.getElementById("slider").style.display = "block";
+			document.getElementById("slider").style.WebkitAnimation = "slide-up .5s ease-out";
+			document.getElementById("slider").style.MozAnimation = "slide-up .5s ease-out";
 		}
 
 		function getScrollPercentage() {
@@ -128,7 +130,7 @@
 		        st = 'scrollTop',
 		        sh = 'scrollHeight';
 		   		percent =  (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-		   	if (percent >= 50) {
+		   	if (percent >= 50 && count == 0) {
 		   		showSlider();
 		   	}
 		}

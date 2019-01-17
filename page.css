@@ -1,6 +1,6 @@
 body {
 	margin: 0 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .banner {
@@ -30,7 +30,6 @@ body {
 .email {
 	height: 25px;
 	font-size: 14px;
-	color: #d7d7d9;
 	margin-left: 10px;
 	padding-left: 5px;
 }
@@ -38,7 +37,6 @@ body {
 .email2 {
 	height: 25px;
 	font-size: 15px;
-	color: #d7d7d9;
 	width: 97%;
 	padding-left: 5px;
 	padding-top: 3px;
@@ -60,7 +58,7 @@ body {
 	background-color: black;
 	color: white;
 	font-size: 12px;
-	font-weight: 500;
+	font-weight: 600;
 	padding-top: 11px;
 	padding-bottom: 7px;
 	width: 270px;
@@ -84,7 +82,7 @@ body {
 .read-more {
 	background-color: #0000;
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: 600;
 	height: 50px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -126,4 +124,13 @@ body {
 
 .close {
 	padding-top: 10px;
+}
+
+@-webkit-keyframes slide-up {
+      0% { opacity: 0; -webkit-transform: translateY(100%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-up {
+      0% { opacity: 0; -moz-transform: translateY(100%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
 }
