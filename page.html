@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Software Engineering Test | Front End</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
 	<link rel="stylesheet" href="page.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
@@ -11,9 +12,11 @@
 			<img src="crown.png" align="left" height="25" width="25">
 		</div>
 		<div class="banner-center">
-			<span align="center">Mau voucher diskon belanja up to 70%?</span>
-			<input class="email" type="email" placeholder="Masukkan email kamu disini" value="">
-			<button class="register">DAFTAR</button>
+			<span align="center" class="want">Mau voucher diskon belanja up to 70%?</span>
+			<div class="email-register">
+				<input class="email" type="email" placeholder="Masukkan email kamu disini" value="">
+				<button class="register">DAFTAR</button>
+			</div>
 		</div>
 	</div>
 	<div class="random-text">
@@ -91,16 +94,16 @@
 		<div style="z-index: 10; position: absolute;">
 			<p class="tips">TIPS BAJU MUSLIM & HIJAB / TIPS HIJAB</p>
 		</div>
-		<img src="facebook.png" align="top" height="30" style="margin-right: 10px;">
-		<img src="hijab.jpeg" height="450" width="auto" style=" position: absolute;">
+		<img class="fb" src="facebook.png" align="top" height="30" style="margin-right: 10px;">
+		<img src="hijab.jpeg" class="hijab-img">
 	</div>
 	<div class="slider" id="slider">
-		<img class="close" src="close.png" height="20" align="right" onClick="closeSlider()">
-		<p style="font-size: 30px;">Belanja Gak Pake Pusing!</p>
-		<p style="font-size: 17px; margin-top: -15px;">Yuk daftarin emailmu untuk melihat pilihan barang - barang fashion MURAH dan TERKINI dari ribuan toko online terpercaya langsung ke email kamu</p>
+		<img class="close" src="close.png" align="right" onClick="closeSlider()">
+		<p class="shop">Belanja Gak Pake Pusing!</p>
+		<p class="kuy">Yuk daftarin emailmu untuk melihat pilihan barang - barang fashion MURAH dan TERKINI dari ribuan toko online terpercaya langsung ke email kamu</p>
 		<input class="email2" type="email" placeholder="Masukkan email kamu disini" value="">
 		<button class="register2">DAFTARKAN SEKARANG</button>
-		<p>Powered by SumoMe</p>
+		<p class="poweredby">Powered by SumoMe</p>
 	</div>
 
 	<script>

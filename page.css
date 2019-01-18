@@ -11,6 +11,12 @@ body {
 	position: fixed;
 }
 
+.hijab-img {
+	height: 450px;
+	width: auto;
+	position: absolute;
+}
+
 .crown {
 	display: flex;
 	align-items: center;
@@ -120,10 +126,23 @@ body {
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+.shop {
+	font-size: 30px;
 }
 
 .close {
 	padding-top: 10px;
+	cursor: pointer;
+	height: 20px;
+	width: 20px;
+}
+
+.kuy {
+	font-size: 17px;
+	margin-top: -15px;
 }
 
 @-webkit-keyframes slide-up {
@@ -133,4 +152,145 @@ body {
 @-moz-keyframes slide-up {
       0% { opacity: 0; -moz-transform: translateY(100%); }   
     100% { opacity: 1; -moz-transform: translateY(0); }
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding-bottom: 150px;
+	}
+
+	.slider {
+		width: auto;
+		right: 0;
+		display: none;
+		height: auto;
+	}
+
+	.poweredby {
+		font-size: 12px;
+		margin-top: 7px;
+	}
+
+	.kuy {
+		font-size: 14px;
+	}
+
+	.shop {
+		font-size: 24px;
+		margin-top: 15px;
+	}
+
+	.crown {
+		display: none;
+	}
+
+	.random-text {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.email2 {
+		height: 17px;
+		font-size: 12px;
+	}
+
+	.register2 {
+		margin-top: 15px;
+		font-size: 14px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+
+	.close {
+		height: 15px;
+		width: 15px;
+	}
+
+	.want {
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.banner {
+		display: block;
+		padding-top: 5px;
+		height: 53px;
+		display: flex;
+		position: fixed;
+	}
+
+	.banner-center {
+		display: block;
+	}
+
+	.email-register {
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.email {
+		height: 20px;
+		font-size: 12px;
+		width: 150px;
+	}
+
+	.register {
+		height: 27px;
+		font-size: 12px;
+		padding-left: 25px;
+		padding-right: 25px;
+		color: white;
+		border-radius: 4px;
+		margin-left: 5px;
+	}
+
+	.random-text {
+		padding-top: 65px;
+		margin-bottom: 100px;
+	}
+
+	.hijab-img {
+		height: auto;
+		width: 100%;
+		position: relative;
+	}
+
+	.hijabers {
+		margin-left: 30px;
+		margin-right: 30px;
+		right: 30px;
+	}
+
+	.fb {
+		display: none;
+	}
+
+	.tips {
+		font-size: 12px;
+		font-weight: 600;
+		padding-top: 11px;
+		padding-bottom: 7px;
+		width: 270px;
+		display: flex;
+	    margin-top: -20px;
+	    border-style: solid;
+	    border-color: white;
+	    border-width: 3px;
+	    margin-left: 9%;
+	    right: 0;
+	}
+
+	.read-more {
+		background-color: #0000;
+		font-size: 13px;
+		font-weight: 600;
+		height: 50px;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-radius: 3px;
+		margin-top: 30px;
+	}
 }
